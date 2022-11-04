@@ -1,0 +1,13 @@
+<div class="container">
+  <h1 class="text-center">Les pokemon Favorite</h1>
+
+  <% pokemon.forEach(function(pokemon) { %>
+    <div class="well">
+      <h2><%= pokemon.name %></h2>
+        <!-- <input hidden type="text" name="name" value="<%= pokemon.name %>">  -->
+        <button class="btn btn-primary" type="submit">remove to Favorite Pokemon</button>
+        <a href="/test/<%= pokemon.name%>">En savoir plus</a>
+      </form>
+    </div>
+  <% }); %>
+</div>
